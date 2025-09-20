@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Contact Us</h1>
+      <p class="subtitle">Have a question? Send us a message and we'll get back to you.</p>
+
+      <form id="contactForm" novalidate>
+        <div class="grid">
+          <label class="field">
+            <span>Full Name</span>
+            <input type="text" name="name" id="name" placeholder="Jane Doe" required />
+            <small class="error" data-for="name"></small>
+          </label>
+
+          <label class="field">
+            <span>Email Address</span>
+            <input type="email" name="email" id="email" placeholder="jane@example.com" required />
+            <small class="error" data-for="email"></small>
+          </label>
+
+          <label class="field full">
+            <span>Subject</span>
+            <input type="text" name="subject" id="subject" placeholder="What is this about?" required />
+            <small class="error" data-for="subject"></small>
+          </label>
+
+          <label class="field full">
+            <span>Message</span>
+            <textarea name="message" id="message" rows="6" placeholder="Type your message here..." required></textarea>
+            <small class="error" data-for="message"></small>
+          </label>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formStatus" role="status" aria-live="polite" class="status" hidden></p>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+

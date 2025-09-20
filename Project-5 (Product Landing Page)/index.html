@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlow - Streamline Your Workflow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-rocket"></i>
+                <span>TechFlow</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#showcase" class="nav-link">Showcase</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Streamline Your <span class="highlight">Workflow</span> with TechFlow
+                </h1>
+                <p class="hero-description">
+                    The all-in-one platform that transforms how teams collaborate, manage projects, and deliver exceptional results. Join thousands of companies already using TechFlow to boost productivity.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Start Free Trial</button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="product-showcase">
+                    <!-- Main Dashboard Mockup -->
+                    <div class="dashboard-mockup main-mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="mockup-title">TechFlow Dashboard</div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-sidebar">
+                                <div class="sidebar-item active">
+                                    <i class="fas fa-home"></i>
+                                    <span>Dashboard</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-tasks"></i>
+                                    <span>Projects</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Team</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Analytics</span>
+                                </div>
+                            </div>
+                            <div class="mockup-main">
+                                <div class="mockup-chart">
+                                    <div class="chart-bars">
+                                        <div class="bar" style="height: 60%"></div>
+                                        <div class="bar" style="height: 80%"></div>
+                                        <div class="bar" style="height: 45%"></div>
+                                        <div class="bar" style="height: 90%"></div>
+                                        <div class="bar" style="height: 70%"></div>
+                                        <div class="bar" style="height: 85%"></div>
+                                    </div>
+                                    <div class="chart-line"></div>
+                                </div>
+                                <div class="mockup-cards">
+                                    <div class="mockup-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-project-diagram"></i>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-title">Active Projects</div>
+                                            <div class="card-value">12</div>
+                                        </div>
+                                    </div>
+                                    <div class="mockup-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-title">Hours Saved</div>
+                                            <div class="card-value">247</div>
+                                        </div>
+                                    </div>
+                                    <div class="mockup-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-trophy"></i>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="card-title">Team Score</div>
+                                            <div class="card-value">94%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Elements -->
+                    <div class="floating-element notification">
+                        <div class="notification-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="notification-content">
+                            <div class="notification-title">New Task Assigned</div>
+                            <div class="notification-time">2 min ago</div>
+                        </div>
+                    </div>
+
+                    <div class="floating-element progress-ring">
+                        <div class="ring-container">
+                            <svg class="progress-ring" width="60" height="60">
+                                <circle class="progress-ring-circle" stroke="#e5e7eb" stroke-width="4" fill="transparent" r="26" cx="30" cy="30"/>
+                                <circle class="progress-ring-circle progress" stroke="#10b981" stroke-width="4" fill="transparent" r="26" cx="30" cy="30" stroke-dasharray="163.36" stroke-dashoffset="32.67"/>
+                            </svg>
+                            <div class="progress-text">75%</div>
+                        </div>
+                    </div>
+
+                    <div class="floating-element team-avatar">
+                        <div class="avatar-group">
+                            <div class="avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Team Member">
+                            </div>
+                            <div class="avatar">
+                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=face" alt="Team Member">
+                            </div>
+                            <div class="avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Team Member">
+                            </div>
+                            <div class="avatar more">+5</div>
+                        </div>
+                        <div class="team-status">Team Online</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-description">
+                    Everything you need to manage your projects efficiently and collaborate seamlessly with your team.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="feature-title">Task Management</h3>
+                    <p class="feature-description">
+                        Organize, prioritize, and track tasks with our intuitive drag-and-drop interface.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Team Collaboration</h3>
+                    <p class="feature-description">
+                        Real-time collaboration tools that keep your team connected and productive.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Analytics & Reports</h3>
+                    <p class="feature-description">
+                        Get insights into your team's performance with detailed analytics and reports.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Mobile App</h3>
+                    <p class="feature-description">
+                        Access your projects anywhere with our fully-featured mobile application.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Enterprise Security</h3>
+                    <p class="feature-description">
+                        Bank-level security with SSO, 2FA, and compliance with industry standards.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 class="feature-title">Integrations</h3>
+                    <p class="feature-description">
+                        Connect with 100+ popular tools including Slack, Google Workspace, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section id="showcase" class="product-showcase-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">See TechFlow in Action</h2>
+                <p class="section-description">
+                    Experience the power of our platform with these interactive demos and real-world use cases.
+                </p>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-mockup mobile-mockup">
+                        <div class="mobile-header">
+                            <div class="mobile-notch"></div>
+                        </div>
+                        <div class="mobile-content">
+                            <div class="mobile-nav">
+                                <div class="nav-item active">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="nav-item">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <div class="mobile-body">
+                                <div class="mobile-card">
+                                    <div class="card-header">
+                                        <h3>Project In Alpha</h3>
+                                        <span class="status-badge">Progress</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                    <div class="card-stats">
+                                        <div class="stat">
+                                            <span class="stat-number">8+</span>
+                                            <span class="stat-label">Tasks</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-number">5+</span>
+                                            <span class="stat-label">Members</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-card">
+                                    <div class="card-header">
+                                        <h3>Project Beta</h3>
+                                        <span class="status-badge completed">Completed</span>
+                                    </div>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill completed" style="width: 100%"></div>
+                                    </div>
+                                    <div class="card-stats">
+                                        <div class="stat">
+                                            <span class="stat-number">15+</span>
+                                            <span class="stat-label">Tasks</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-number">3+</span>
+                                            <span class="stat-label">Members</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-content">
+                        <h3>Mobile-First Design</h3>
+                        <p>Access your projects anywhere with our fully-featured mobile app. Stay productive on the go with real-time updates and seamless synchronization.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Offline mode support</li>
+                            <li><i class="fas fa-check"></i> Push notifications</li>
+                            <li><i class="fas fa-check"></i> Touch-optimized interface</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-item">
+                    <div class="showcase-mockup analytics-mockup">
+                        <div class="analytics-header">
+                            <h3>Analytics Dashboard</h3>
+                            <div class="time-filter">
+                                <span class="filter-item active">7D</span>
+                                <span class="filter-item">30D</span>
+                                <span class="filter-item">90D</span>
+                            </div>
+                        </div>
+                        <div class="analytics-content">
+                            <div class="metric-cards">
+                                <div class="metric-card">
+                                    <div class="metric-icon">
+                                        <i class="fas fa-tasks"></i>
+                                    </div>
+                                    <div class="metric-info">
+                                        <div class="metric-value">1,247</div>
+                                        <div class="metric-label">Tasks Completed</div>
+                                        <div class="metric-change positive">+12%</div>
+                                    </div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="metric-info">
+                                        <div class="metric-value">2.4h</div>
+                                        <div class="metric-label">Avg. Task Time</div>
+                                        <div class="metric-change negative">-8%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-container">
+                                <div class="chart-bars">
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 60%"></div>
+                                        <div class="bar-label">Mon</div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 80%"></div>
+                                        <div class="bar-label">Tue</div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 45%"></div>
+                                        <div class="bar-label">Wed</div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 90%"></div>
+                                        <div class="bar-label">Thu</div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 70%"></div>
+                                        <div class="bar-label">Fri</div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 85%"></div>
+                                        <div class="bar-label">Sat</div>
+                                    </div>
+                                    <div class="bar-group">
+                                        <div class="bar" style="height: 55%"></div>
+                                        <div class="bar-label">Sun</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-content">
+                        <h3>Advanced Analytics</h3>
+                        <p>Get deep insights into your team's performance with comprehensive analytics and reporting tools. Make data-driven decisions to improve productivity.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Real-time metrics</li>
+                            <li><i class="fas fa-check"></i> Custom reports</li>
+                            <li><i class="fas fa-check"></i> Export capabilities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="showcase-item">
+                    <div class="showcase-mockup collaboration-mockup">
+                        <div class="collaboration-header">
+                            <h3>Team Collaboration</h3>
+                            <div class="online-indicator">
+                                <div class="indicator-dot"></div>
+                                <span>5 members online</span>
+                            </div>
+                        </div>
+                        <div class="collaboration-content">
+                            <div class="chat-section">
+                                <div class="chat-message">
+                                    <div class="message-avatar">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face" alt="User">
+                                    </div>
+                                    <div class="message-content">
+                                        <div class="message-header">
+                                            <span class="sender-name">John Smith</span>
+                                            <span class="message-time">2:30 PM</span>
+                                        </div>
+                                        <div class="message-text">Great work on the design mockups! 🎨</div>
+                                    </div>
+                                </div>
+                                <div class="chat-message">
+                                    <div class="message-avatar">
+                                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=face" alt="User">
+                                    </div>
+                                    <div class="message-content">
+                                        <div class="message-header">
+                                            <span class="sender-name">Sarah Johnson</span>
+                                            <span class="message-time">2:32 PM</span>
+                                        </div>
+                                        <div class="message-text">Thanks! Ready for the next iteration?</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="file-sharing">
+                                <div class="file-item">
+                                    <i class="fas fa-file-image"></i>
+                                    <span>design-mockup-v2.png</span>
+                                    <span class="file-size">2.4 MB</span>
+                                </div>
+                                <div class="file-item">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>project-brief.pdf</span>
+                                    <span class="file-size">1.8 MB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-content">
+                        <h3>Real-Time Collaboration</h3>
+                        <p>Work together seamlessly with instant messaging, file sharing, and live editing capabilities. Keep your team connected and productive.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Live chat & comments</li>
+                            <li><i class="fas fa-check"></i> File sharing & versioning</li>
+                            <li><i class="fas fa-check"></i> Screen sharing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-description">
+                    Don't just take our word for it. Here's what real users have to say about TechFlow.
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "TechFlow has completely transformed how our team works. We've seen a 40% increase in productivity since implementing it."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="John Smith">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">John Smith</h4>
+                            <p class="author-title">CEO, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The collaboration features are outstanding. Our remote team feels more connected than ever before."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop&crop=face" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Sarah Johnson</h4>
+                            <p class="author-title">Project Manager, InnovateLab</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The analytics dashboard gives us incredible insights into our team's performance. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Mike Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Mike Chen</h4>
+                            <p class="author-title">CTO, StartupXYZ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-description">
+                    Choose the plan that's right for your team. No hidden fees, no surprises.
+                </p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label">Monthly</span>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="pricing-toggle">
+                    <label for="pricing-toggle"></label>
+                </div>
+                <span class="toggle-label">Yearly <span class="discount">Save 20%</span></span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Starter</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="price" data-monthly="9" data-yearly="7">9</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">Perfect for small teams getting started</p>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Up to 5 team members</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>10 projects</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Basic analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Email support</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Professional</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="price" data-monthly="29" data-yearly="23">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">Ideal for growing businesses</p>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Up to 25 team members</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited projects</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Priority support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Custom integrations</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="price" data-monthly="99" data-yearly="79">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="plan-description">For large organizations</p>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited team members</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Unlimited projects</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Custom analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 phone support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>SSO & advanced security</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Custom training</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Workflow?</h2>
+                <p class="cta-description">
+                    Join thousands of teams already using TechFlow to boost productivity and streamline their processes.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large">Start Your Free Trial</button>
+                    <button class="btn btn-secondary btn-large">
+                        <i class="fas fa-calendar"></i>
+                        Schedule Demo
+                    </button>
+                </div>
+                <p class="cta-note">No credit card required • 14-day free trial • Cancel anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>TechFlow</span>
+                    </div>
+                    <p class="footer-description">
+                        Streamlining workflows for teams worldwide. Built for productivity, designed for collaboration.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechFlow. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

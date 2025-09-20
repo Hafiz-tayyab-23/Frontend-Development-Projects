@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Collapsable Sidebar</title>
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo">Music App</div>
+    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#"><i class="fa-solid fa-music"></i> My music</a>
+    <a href="#"><i class="fa-solid fa-heart"></i> Favourites</a>
+    <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+    <a href="#"><i class="fa-solid fa-circle-question"></i> Help</a>
+    <a href="#" class="about-link"><i class="fa-solid fa-circle-info"></i> About</a>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Toggle Button -->
+  <button class="toggle-btn" id="toggleBtn"><i class="fa-solid fa-bars"></i></button>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div>
+      <h1>Hi There!</h1>
+      <p>Click the menu button to open the sidebar.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

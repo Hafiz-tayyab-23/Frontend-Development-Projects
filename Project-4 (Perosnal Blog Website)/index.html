@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Personal Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">My Personal Blog</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls-section" aria-label="Filters and options">
+      <div class="controls-container">
+        <div class="controls-header">
+          <h2 class="controls-title">Filter & Search</h2>
+          <p class="controls-subtitle">Find exactly what you're looking for</p>
+        </div>
+        
+        <div class="controls-grid">
+          <div class="control-card">
+            <div class="control-icon">🏷️</div>
+            <div class="control-content">
+              <label for="categorySelect" class="control-label">Category</label>
+              <select id="categorySelect" class="control-select" aria-label="Select category">
+                <option value="All">All Categories</option>
+                <option value="Tech">Tech</option>
+                <option value="Travel">Travel</option>
+                <option value="Food">Food</option>
+                <option value="Design">Design</option>
+                <option value="Lifestyle">Lifestyle</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-card">
+            <div class="control-icon">📄</div>
+            <div class="control-content">
+              <label for="perPageSelect" class="control-label">Posts per page</label>
+              <select id="perPageSelect" class="control-select" aria-label="Select posts per page">
+                <option value="4">4 posts</option>
+                <option value="6" selected>6 posts</option>
+                <option value="8">8 posts</option>
+                <option value="12">12 posts</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="control-card control-card-search">
+            <div class="control-icon">🔍</div>
+            <div class="control-content">
+              <label for="searchInput" class="control-label">Search posts</label>
+              <div class="search-wrapper">
+                <input id="searchInput" type="search" class="control-search" placeholder="Search by title..." aria-label="Search posts by title" />
+                <div class="search-indicator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="postsGrid" class="posts-grid" aria-live="polite"></section>
+
+    <nav class="pagination" aria-label="Pagination controls">
+      <button id="prevBtn" class="btn" type="button" aria-label="Previous page">Prev</button>
+      <span id="pageInfo" class="page-info" aria-live="polite"></span>
+      <button id="nextBtn" class="btn" type="button" aria-label="Next page">Next</button>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> My Personal Blog</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+

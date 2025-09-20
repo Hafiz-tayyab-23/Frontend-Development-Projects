@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow – Organize Your Day</title>
+    <meta name="description" content="TaskFlow helps you capture, prioritize, and complete tasks with ease.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230083ff'/><path d='M25 55l12 12 38-38' stroke='white' stroke-width='10' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="container nav">
+            <a class="logo" href="#" aria-label="TaskFlow home">
+                <svg class="logo-mark" width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#8b5cf6"/>
+                            <stop offset="100%" stop-color="#ec4899"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="4" y="4" width="40" height="40" rx="12" fill="url(#g1)"/>
+                    <path d="M14 25l7 7 13-13" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="logo-type">TaskFlow</span>
+            </a>
+            <a class="btn btn-nav" href="#pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="section hero" id="home">
+            <div class="container grid-2">
+                <div class="reveal">
+                    <h1>Organize tasks. <span class="accent">Own your day.</span></h1>
+                    <p class="lead">TaskFlow is a simple app that helps you capture, prioritize, and finish what matters—at work and in life.</p>
+                    <div class="cta">
+                        <a href="#pricing" class="btn btn-primary">Get Started</a>
+                        <a href="#features" class="btn btn-ghost">See Features</a>
+                    </div>
+                </div>
+                <div class="hero-card reveal">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <form id="taskForm" class="task-form" autocomplete="off">
+                            <input id="taskInput" name="task" type="text" placeholder="Add a task and press Enter" aria-label="Add a task" required>
+                            <button class="btn btn-primary" type="submit" aria-label="Add task">Add</button>
+                        </form>
+                        <ul id="taskList" class="task-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section" id="features">
+            <div class="container">
+                <h2 class="section-title reveal">Everything you need to stay on top</h2>
+                <div class="features">
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">✓</div>
+                        <h3>Quick Capture</h3>
+                        <p>Add tasks in seconds with keyboard-first input and smart parsing.</p>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">⚡</div>
+                        <h3>Prioritize Fast</h3>
+                        <p>Drag to reorder, star important items, and focus on today.</p>
+                    </article>
+                    <article class="feature reveal">
+                        <div class="icon" aria-hidden="true">🔔</div>
+                        <h3>Reminders</h3>
+                        <p>Never miss a deadline with gentle notifications and snooze.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section" id="testimonials">
+            <div class="container">
+                <h2 class="section-title reveal">Loved by busy people</h2>
+                <div class="testimonials">
+                    <figure class="testimonial reveal">
+                        <div class="testimonial-top">
+                            <div class="avatar" aria-hidden="true">PM</div>
+                            <div class="meta">
+                                <div class="name">Product Manager</div>
+                                <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+                            </div>
+                        </div>
+                        <blockquote>“TaskFlow turned my chaotic list into a plan I actually follow.”</blockquote>
+                    </figure>
+                    <figure class="testimonial reveal">
+                        <div class="testimonial-top">
+                            <div class="avatar" aria-hidden="true">ST</div>
+                            <div class="meta">
+                                <div class="name">Student</div>
+                                <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+                            </div>
+                        </div>
+                        <blockquote>“The simple design keeps me focused. I finish more every day.”</blockquote>
+                    </figure>
+                    <figure class="testimonial reveal">
+                        <div class="testimonial-top">
+                            <div class="avatar" aria-hidden="true">FR</div>
+                            <div class="meta">
+                                <div class="name">Freelancer</div>
+                                <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+                            </div>
+                        </div>
+                        <blockquote>“Finally a task app that’s fast, clean, and delightful.”</blockquote>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="section" id="pricing">
+            <div class="container">
+                <h2 class="section-title reveal">Simple, fair pricing</h2>
+                <div class="pricing" id="plans">
+                    <div class="price-card reveal selectable" data-plan="free" tabindex="0" role="button" aria-pressed="false">
+                        <h3>Free</h3>
+                        <p class="price">$0</p>
+                        <ul>
+                            <li>Unlimited tasks</li>
+                            <li>Today & Upcoming views</li>
+                            <li>Basic reminders</li>
+                        </ul>
+                        <a href="#" class="btn btn-ghost plan-cta">Start Free</a>
+                    </div>
+                    <div class="price-card reveal selectable" data-plan="pro" tabindex="0" role="button" aria-pressed="false">
+                        <h3>Pro</h3>
+                        <p class="price">$5<span class="per">/mo</span></p>
+                        <ul>
+                            <li>All Free features</li>
+                            <li>Projects & labels</li>
+                            <li>Recurring tasks</li>
+                        </ul>
+                        <a href="#" class="btn btn-ghost plan-cta">Go Pro</a>
+                    </div>
+                    <div class="price-card reveal selectable" data-plan="team" tabindex="0" role="button" aria-pressed="false">
+                        <h3>Team</h3>
+                        <p class="price">$9<span class="per">/user</span></p>
+                        <ul>
+                            <li>Shared projects</li>
+                            <li>Comments & mentions</li>
+                            <li>Priority support</li>
+                        </ul>
+                        <a href="#" class="btn btn-ghost plan-cta">Try Team</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> TaskFlow</p>
+            <div class="socials">
+                <a href="#" aria-label="Twitter">T</a>
+                <a href="#" aria-label="Instagram">I</a>
+                <a href="#" aria-label="LinkedIn">L</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="live-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        
+        <svg class="connections" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:var(--accent);stop-opacity:0.3" />
+                    <stop offset="100%" style="stop-color:var(--accent-2);stop-opacity:0.1" />
+                </linearGradient>
+            </defs>
+            <path class="connection-line" d="M10,20 Q50,5 90,30" stroke="url(#lineGrad)" stroke-width="0.5" fill="none"/>
+            <path class="connection-line" d="M5,60 Q30,40 70,70" stroke="url(#lineGrad)" stroke-width="0.3" fill="none"/>
+            <path class="connection-line" d="M20,80 Q60,50 95,90" stroke="url(#lineGrad)" stroke-width="0.4" fill="none"/>
+        </svg>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+
