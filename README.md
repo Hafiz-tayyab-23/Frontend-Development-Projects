@@ -1,13 +1,13 @@
-# Frontend UI Projects 🚀
+# Frontend Development Projects 🚀
 
-This repository contains a collection of **5 front-end web development projects** I built during my internship.  
+This repository contains a collection of **5 front-end web development projects** I built during my internship at <b><i>Elevvo Pathways</i></b>.  
 Each project focuses on **UI/UX design, responsiveness, and interactivity** using HTML, CSS, and JavaScript.
 
 ---
 
 ## 📂 Projects Included
 
-1. **Collapsible Sidebar UI**  
+1. **Collapsible Sidebar**  
    - Smooth expand/collapse transitions  
    - Modern interactive navigation  
    - Fully responsive design  
@@ -50,11 +50,12 @@ Each project focuses on **UI/UX design, responsiveness, and interactivity** usin
 
 ---
 
-frontend-ui-projects/
-│── Collapsible-Sidebar-UI/
-│── Contact-Form/
-│── Task-Management-App/
-│── Personal-Blog-Website/
-│── Product-Landing-Page/
+## 📂 Folder Structure
+Frontend-Development-Projects/<br>
+│── Project-1 (Collapsable Sidebar)/<br>
+│── Project-2 (Contact Form)/<br>
+│── Project-3 (Task Management App)/<br>
+│── Project-4 (Personal Blog Website)/<br>
+│── Project-5 (Product Landing Page)/<br>
 └── README.md
 
